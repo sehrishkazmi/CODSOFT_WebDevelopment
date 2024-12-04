@@ -1,0 +1,114 @@
+<!--CODSOFT NOVEMBER BATCH 2024-->
+<!--WEB DEVELOPMENT-->
+<!--Sehrish Kazmi-->
+<!--Level 1: Task 2 Landing Page-->
+<!--Create columns, divide sections, arrange items, and add headers and footers-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="topnav" id="myTopnav">
+        <nav class="navbar">
+            <a href="#home" class="active"><img src="logo2.png" width="150"></a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!-- Fixed typo from 'oneclick' to 'onclick' -->
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- About Section -->
+<section class="about">
+    <div class="about-content">
+        <h1><i>Innovating the Future with TechBolt</i></h1>
+        <p>Transforming ideas into cutting-edge solutions. Discover how our technology empowers businesses to thrive in the digital era.</p>
+        <a href="#signup" class="about-button">Try for Free</a>
+    </div>
+    <div class="about-image">
+        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="700" alt="Software Dashboard">
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="services" class="services">
+    <h2>Key Services</h2>
+    <p>At TechBolt, we provide a wide range of services designed to meet the needs of modern businesses. Our expertise spans various domains, enabling us to deliver solutions that drive innovation and accelerate growth.</p>
+    <div class="services-grid">
+        <div class="service">
+            <h3>Custom Software Development</h3>
+            <p>Tailored software solutions built to solve your unique business challenges.</p>
+        </div>
+        <div class="service">
+            <h3>Cloud Solutions</h3>
+            <p>Scalable, secure, and reliable cloud infrastructure to optimize your operations.</p>
+        </div>
+        <div class="service">
+            <h3>Mobile App Development</h3>
+            <p>Intuitive and user-friendly mobile applications designed to enhance your customer experience.</p>
+        </div>
+        <div class="service">
+            <h3>Data Analytics & AI</h3>
+            <p>Harness the power of data and artificial intelligence to make informed business decisions.</p>
+        </div>
+        <div class="service">
+            <h3>IT Consulting</h3>
+            <p>Expert guidance to help you navigate the fast-evolving technology landscape and stay ahead of the curve.</p>
+        </div>
+        <div class="service">
+            <h3>Cybersecurity Solutions</h3>
+            <p>Comprehensive protection to safeguard your digital assets from threats and vulnerabilities.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-grid">
+        <div class="testimonial">
+            <p>"SoftTech transformed how we manage projects. It's a game-changer!" <br><b> - Jane Doe, CEO</b></p>
+        </div>
+        <div class="testimonial">
+            <p>"The analytics tools are unparalleled. Highly recommend!" <br><b> - John Smith, Product Manager</b> </p>
+        </div>
+    </div>
+</section>
+
+<!-- Call-to-Action Section -->
+<section id="signup" class="cta">
+    <h2>Start Your Free Trial Today</h2>
+    <p>No credit card required. Cancel anytime.</p>
+    <a href="#" class="cta-button">Sign Up Now</a>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <div class="contact">
+        <p>&copy; 2024 Techbolt. All rights reserved.</p>
+        <p>Email: support@techbolt.com | Phone: +1-800-555-6789</p>
+    </div>
+</footer>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</body>
+</html>

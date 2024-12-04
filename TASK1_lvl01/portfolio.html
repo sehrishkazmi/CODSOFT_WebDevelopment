@@ -1,0 +1,211 @@
+<!--CODSOFT NOVEMBER BATCH 2024-->
+<!--WEB DEVELOPMENT-->
+<!--Sehrish Kazmi-->
+<!--Level 1: Task 1 Portfolio-->
+<!--Creating a personal portfolio using CSS and HTML is a popular beginner web development project-->
+<!--Header Section: Add your name or a logo at the top. Optionally, include a brief introduction or tagline.-->
+<!--About Section: Insert an image of yourself. Write a short bio highlighting your skills and experience.-->
+<!--Skills Section: List your key skills or areas of expertise.-->
+<!--Projects Section: Showcase samples of your work or projects. Include project titles, descriptions, and images.-->
+<!--Resume Section: Provide a link to download your resume in PDF format.-->
+<!--Contact Section: Include your contact information, such as email address and phone number.-->
+<!--Footer: Add a copyright notice and any additional links or information.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+<!--    Internal CSS-->
+    <style>
+        body {
+            background-color: rgb(237, 172, 237);
+            text-align: center;
+            margin: 0;
+        }
+        header{
+            background-color: rgb(255, 252, 245);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            position: relative;
+        }
+        h1 {
+            color: rgb(51, 0, 77);
+            font-family: "Book Antiqua", cursive, sans-serif;
+            font-size: 50px;
+        }
+        h2 {
+            color: rgb(102, 0, 153);
+            font-family: "Book Antiqua", cursive, sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+        h3{
+            font-family: "Book Antiqua", cursive, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(28, 9, 57);
+            margin: 10px 10px 10px 10px;
+        }
+        p {
+            color: black;
+            background-color: #e6cbe6;
+            margin: 10px 210px 20px 220px;
+            font-family: "Book Antiqua", cursive, sans-serif;
+            text-align: center;
+        }
+        .tooltip-container{
+            position: relative;
+            display: inline-block;
+        }
+        .tooltip-text{
+            visibility: hidden;
+            width: 80%;
+            background-color: #eadfdf;
+            color: #000000;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 4px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+
+            opacity: 30%;
+            transition: opacity 0.5s;
+        }
+
+        .tooltip-container:hover .tooltip-text{
+            visibility: visible;
+            opacity: 1;
+        }
+        div.container{
+            text-align: center;
+        }
+        ol{
+            display: inline-block;
+            text-align: center;
+            background-color: #e6cbe6;
+            margin: 10px 50px 20px 50px;
+        }
+        ul{
+            display: inline-block;
+            text-align: center;
+            background-color: #e6cbe6;
+            margin: 10px 210px 20px 220px;
+        }
+        footer{
+            background-color: #33004d;
+            color: white;
+            padding: 20px;
+            position: relative;
+            text-align: center;
+        }
+        h4{
+            font-family: "Book Antiqua", cursive, sans-serif;
+            text-align: center;
+            color: white;
+            margin: 10px 10px 10px 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Sehrish Kazmi Logo" height="150" width="150">
+    <h1>Welcome to Sehrish Kazmi's Portfolio</h1>
+</header>
+<p >Electrical Engineer🎓, Writer✒️, Photographer 📷, Artist 🎨, Programmer 💻</p>
+
+<section>
+    <h2>About</h2>
+    <div class="tooltip-container">
+    <img src="https://i.pinimg.com/736x/ef/af/24/efaf242b9905f2be8004349877e148cf.jpg"
+         alt="Image of back of girl's head">
+        <div class="tooltip-text">This is a placeholder image.</div>
+    </div>
+    <h3>Personal Profile</h3>
+    <p>Electrical Engineer, specialized in Networks and Communication, Cloud Computing and DevOps technologies.
+    <br> I have a keen interest in Cybersecurity, Programming and Computer Vision.</p>
+</section>
+<section>
+    <h2>Skills & Area of Expertise</h2>
+    <div class="container">
+    <h3>Programming Languages:</h3>
+    <ol class="myUL">
+        <li>Python</li>
+        <li>C/C++</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>MATLAB</li>
+    </ol>
+    <h3>Tools:</h3>
+    <ol >
+        <li>Pycharm</li>
+        <li>IntelliJ Idea</li>
+        <li>WebStorm</li>
+        <li>Dev-C++</li>
+        <li>MATLAB</li>
+        <li>Wireshark</li>
+        <li>Cisco Packet Tracer</li>
+    </ol>
+    <h3>Libraries:</h3>
+    <ol >
+         <li>SciPy</li>
+         <li>Numpy</li>
+         <li>Scikit-learn</li>
+         <li>Matplotlib</li>
+         <li>Pandas</li>
+         <li>Seaborn</li>
+         <li>OpenCV</li>
+    </ol>
+    </div>
+
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <h3>PodPursuit: Scaling Kubernetes Cluster</h3>
+    <p>We stress-tested CoreDNS in Kubernetes, evaluating Vertical Pod Autoscaler's (VPA) resource management under high loads. Using Prometheus and Grafana for monitoring, we found that while CoreDNS handles significant traffic, stress increases resource spikes. The VPA effectively ensured stability, emphasizing the value of autoscaling in cloud-native reliability.</p>
+    <div class="tooltip-container">
+        <img src="https://i.pinimg.com/736x/60/ec/b0/60ecb0bcfdb554a0a1cac444f838fae1.jpg" alt="K8s Dashboard">
+        <div class="tooltip-text">K8s dashboard image</div>
+    </div>
+
+    <h3>Railway Obstruction Detection</h3>
+    <p>We developed a railway obstacle detection system using ultrasonic and IR sensors to enhance train safety. The system detects obstacles on tracks in real-time, providing early warnings to prevent collisions. By integrating sensor data, it ensures accurate detection and offers a cost-effective solution for improving railway operations.</p>
+    <div class="tooltip-container">
+        <img src="https://i.pinimg.com/736x/37/a8/76/37a8760d09b737cde9773a86788223e3.jpg" alt="Ultrasonic sensor car">
+        <div class="tooltip-text">Ultrasonic sensor car.</div>
+    </div>
+
+</section>
+
+<section>
+    <h2>Resume</h2>
+    <p><a href="https://drive.google.com/file/d/1wJss3LbNpjK0GU7uyQx49wKoLg_8KSJu/view?usp=drive_link" target="_blank">Link to my resume</a></p>
+
+<!--    need to add pdf link to my overleaf resume-->
+</section>
+<section>
+    <h2>Contact & References</h2>
+<!--    phone number and email link-->
+    <ul>
+        <li><a href="tel:+923352132121">Phone <br> </a></li>
+        <li><a href="mailto:sehrishkazmi28@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/sehrish-kazmi/" target="_blank">Linkedin</a></li>
+        <li><a href="https://github.com/sehrishkazmi" target="_blank">GitHub</a></li>
+    </ul>
+</section>
+<!--Footer-->
+<footer>
+    <h4>Copyright ©2024</h4>
+</footer>
+</body>
+</html>
