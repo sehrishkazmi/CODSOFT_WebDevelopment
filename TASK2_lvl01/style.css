@@ -5,7 +5,6 @@
 }
 .topnav a {
     display: inline-grid;
-    /*float: left;*/
     color: #0097b2; /*menu color*/
     padding: 14px 16px;
     text-align: center;
@@ -32,7 +31,6 @@ h1, h2, h3, p {
     margin: 20px;
 }
 p{
-    /*color:white;*/
     font-size:15px;
 }
 

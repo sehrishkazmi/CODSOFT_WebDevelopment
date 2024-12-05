@@ -16,7 +16,7 @@ header p{
     font-family: Garamond, cursive, sans-serif;
     margin-top: 4px; /*reduces space above p*/
 }
-/*need to work on this part*/
+
 body {
     margin: 0;
     padding: 0;
@@ -34,7 +34,6 @@ body {
 .calculator {
     background-color: rgba(30, 25, 25, 0.63);
     padding: 20px;
-    /*border-radius: 0px;*/
     width: 300px;
     border: wheat solid 1px;
 }
